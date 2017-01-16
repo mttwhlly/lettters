@@ -1,0 +1,54 @@
+/*
+   Spezific styling for salvattore
+   Feel free to edit it as you like
+   More info at http://salvattore.com
+ */
+#wrapper {
+    width: 90%;
+    margin: auto;
+
+}
+/* Base styles */
+.column {
+    float: left;
+}
+.size-1of4 {
+    width: 25%;
+}
+.size-1of3 {
+    width: 33.333%;
+}
+.size-1of2 {
+    width: 50%;
+}
+.item {
+  margin: 0 20px 40px;
+  padding: 0px;
+-webkit-box-shadow: 0px 4px 37px -5px rgba(0,0,0,0.41);
+-moz-box-shadow: 0px 4px 37px -5px rgba(0,0,0,0.41);
+box-shadow: 0px 4px 37px -5px rgba(0,0,0,0.41);
+}
+/* Configurate salvattore with media queries */
+@media screen and (max-width: 450px) {
+    #grid[data-columns]::before {
+        content: '1 .column';
+    }
+}
+
+@media screen and (min-width: 451px) and (max-width: 768px) {
+    #grid[data-columns]::before {
+        content: '2 .column.size-1of2';
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 850px) {
+    #grid[data-columns]::before {
+        content: '3 .column.size-1of3';
+    }
+}
+
+@media screen and (min-width: 851px) {
+    #grid[data-columns]::before {
+        content: '4 .column.size-1of4';
+    }
+}

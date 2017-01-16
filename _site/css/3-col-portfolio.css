@@ -1,0 +1,52 @@
+/*!
+ * Start Bootstrap - 3 Col Portfolio (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+    padding-top: 120px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    background-color: blue;
+}
+
+.portfolio-item {
+    margin-bottom: 25px;
+}
+
+footer {
+    clear: both;
+    margin: 50px 0;
+}
+
+.title {
+    font-family: "hobeaux-rococeaux", script;
+    font-size: 5em;
+    color: white;
+}
+
+@media screen and (min-width: 1px) and (max-width: 767px){
+    .title {
+    font-family: "hobeaux-rococeaux", script;
+    color: red;
+    font-size: 3em;
+    text-align: center;
+}
+    #columns[data-columns]::before {
+        content: '1 .col-xs-12';
+    }
+}
+@media screen and (min-width:768px) and (max-width: 991px){
+    .title {
+        font-family: "hobeaux-rococeaux", script;
+        color: yellow;
+        font-size: 4em;
+    }
+    #columns[data-columns]::before {
+        content: '2 .col-sm-6';
+    }
+}
+@media screen and (min-width:992px) and (max-width: 9999px){
+    #columns[data-columns]::before {
+        content: '3 .col-md-4';
+    }
+}
