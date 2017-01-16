@@ -18,7 +18,7 @@ collections:
     - "/uploads/img-23.jpg"
     - "/uploads/img-25.jpg"
 email: mttwhlly@icloud.com
-description: "Inspiring vintage typography"
+description: Inspiring vintage typography
 baseurl: 
 url: http://127.0.0.1
 markdown: kramdown
