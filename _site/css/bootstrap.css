@@ -70,7 +70,6 @@ mark {
 }
 small {
   font-size: 80%;
-  color: white;
 }
 sub,
 sup {
@@ -1099,7 +1098,7 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: white;
+  color: orangered;
   text-decoration: underline;
 }
 a:hover,
